@@ -84,32 +84,21 @@ const NavBar = () => {
                                       <span className="menu-arrow" />
                                     </span>
                                     <div className="menu-sub menu-sub-lg-down-accordion menu-sub-lg-dropdown menu-active-bg py-lg-4 w-lg-225px">
-                                      {/* <div className="menu-item">
-                                        <a className="menu-link py-3" href="../../demo1/dist/pages/profile/overview.html">
+                                     
+                                      <div className="menu-item">
+                                        <a className="menu-link py-3" href="/pagPrimaria">
                                           <span className="menu-bullet">
                                             <span className="bullet bullet-dot" />
                                           </span>
-                                          <span className="menu-title">Overview 8</span>
+                                          <span className="menu-title">Pag. Primaria</span>
                                         </a>
-                                      </div> */}
-
+                                      </div>
                                       <div className="menu-item">
                                         <a className="menu-link py-3" href="/pagSecundaria">
                                           <span className="menu-bullet">
                                             <span className="bullet bullet-dot" />
                                           </span>
                                           <span className="menu-title">Pag. Secundaria</span>
-                                        </a>
-
-
-                                      </div>
-
-                                      <div className="menu-item">
-                                        <a className="menu-link py-3" href="../../demo1/dist/pages/profile/projects.html">
-                                          <span className="menu-bullet">
-                                            <span className="bullet bullet-dot" />
-                                          </span>
-                                          <span className="menu-title">Projects</span>
                                         </a>
                                       </div>
                                       <div className="menu-item">
@@ -1769,7 +1758,9 @@ const NavBar = () => {
                     {/*begin::Page title*/}
                     <div data-kt-swapper="true" data-kt-swapper-mode="prepend" data-kt-swapper-parent="{default: '#kt_content_container', 'lg': '#kt_toolbar_container'}" className="page-title d-flex align-items-center flex-wrap me-3 mb-5 mb-lg-0">
                       {/*begin::Title*/}
-                      <h1 className="d-flex align-items-center text-dark fw-bolder fs-3 my-1">Pag. Principal</h1>
+                      <a href="/">
+                        <h1 className="d-flex align-items-center text-dark fw-bolder fs-3 my-1">Nav-Bar</h1>
+                      </a>
                       {/*end::Title*/}
                       {/*begin::Separator*/}
                       <span className="h-20px border-gray-200 border-start mx-4" />
@@ -1795,7 +1786,7 @@ const NavBar = () => {
                         </li>
                         {/*end::Item*/}
                         {/*begin::Item*/}
-                        <li className="breadcrumb-item text-dark">Pag. Principal</li>
+                        <li className="breadcrumb-item text-dark">Nav-Bar</li>
                         {/*end::Item*/}
                       </ul>
                       {/*end::Breadcrumb*/}
@@ -1807,6 +1798,8 @@ const NavBar = () => {
                 {/*end::Toolbar*/}
               </div>
               {/*end::Content*/}
+
+
               {/*================ begin::Footer ===============*/}
 
               {/*================ end::Footer ===============*/}
@@ -1817,6 +1810,7 @@ const NavBar = () => {
           </div>
           {/*end::Page*/}
         </div>
+
       </div>
     </div>
   )

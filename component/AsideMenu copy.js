@@ -1592,7 +1592,7 @@ const AsideMenu = () => {
                     </div>
                   </div>
                   <div className="menu-item">
-                    <a className="menu-link" href="https://preview.keenthemes.com/metronic8/demo1/layout-builder.html" data-bs-toggle="tooltip" data-bs-original-title="title" data-bs-trigger="hover" data-bs-dismiss="click" data-bs-placement="right">
+                    <a className="menu-link" href="https://preview.keenthemes.com/metronic8/demo1/layout-builder.html" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-dismiss="click" data-bs-placement="right">
                       <span className="menu-icon">
                         {/*begin::Svg Icon | path: icons/duotune/general/gen019.svg*/}
                         <span className="svg-icon svg-icon-2">

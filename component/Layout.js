@@ -1,9 +1,13 @@
 /* eslint-disable @next/next/no-sync-scripts */
+
 import Head from 'next/head';
 import AsideMenu from './AsideMenu';
-import NavBar from './NavBar'
+// import NavBar from './NavBar'
+import NavBarr from './NavBarr'
+import index from '../pages/index';
+import Footer from './Footer';
 
-const Layout = () => {
+const Layout = ({ children }) => {
 	return (
 		<div>
 			<Head>
@@ -15,7 +19,7 @@ const Layout = () => {
 				<meta charSet="utf-8" />
 				<meta property="og:locale" content="en_US" />
 				<meta property="og:type" content="article" />
-				<meta property="og:title" content="Metronic - Bootstrap 5 HTML, VueJS, React, Angular & Laravel Admin Dashboard Theme" />
+				{/* <meta property="og:title" content="Metronic - Bootstrap 5 HTML, VueJS, React, Angular & Laravel Admin Dashboard Theme" /> */}
 				<meta property="og:url" content="https://keenthemes.com/metronic" />
 				<meta property="og:site_name" content="Keenthemes | Metronic" />
 				<link rel="canonical" href="https://preview.keenthemes.com/metronic8" />
@@ -32,9 +36,21 @@ const Layout = () => {
 				{/*begin::Main*/}
 				{/*begin::Root*/}
 			</Head>
-			<div>
-				<AsideMenu />
-				<NavBar />
+			<div className="page d-flex flex-row flex-column-fluid">
+				<nav>
+					<AsideMenu />
+				</nav>
+				{/* <nav>
+					<NavBar />
+				</nav> */}
+				<nav>
+					<NavBarr />
+				</nav>
+				<div className="m-0 vh-100 row justify-content-center align-items-center">
+					<main>
+						{children}
+					</main>
+				</div>
 			</div>
 			<script>var hostUrl = `assets/`;</script>
 			<script src="assets/plugins/global/plugins.bundle.js"></script>

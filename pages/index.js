@@ -6,8 +6,8 @@ import Layout from '../component/Layout'
 
 const index = () => {
   return (
-    <div>
-      <Layout />
+    <div className="col-auto bg-danger p-5 text-center">
+      <h1>PAGINA PRINCIPAL !!!</h1>
     </div>
   )
 }
