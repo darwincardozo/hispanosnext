@@ -2,15 +2,12 @@
 
 import Head from 'next/head';
 import AsideMenu from './AsideMenu';
-// import NavBar from './NavBar'
-import NavBarr from './NavBarr'
-import index from '../pages/index';
+import NavBar from './NavBar'
 import Footer from './Footer';
 import { useEffect } from 'react';
 
 
 const Layout = ({ children }) => {
-
 
 	useEffect(() => {
 		const body = document.body;
@@ -53,7 +50,7 @@ const Layout = ({ children }) => {
 				</nav>
 
 				<nav>
-					<NavBarr />
+					<NavBar />
 				</nav>
 
 				{/* <main className="m-0 vh-100 row justify-content-center align-items-center"> */}
