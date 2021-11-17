@@ -6,18 +6,8 @@ import AsideMenu from './AsideMenu';
 import NavBarr from './NavBarr'
 import index from '../pages/index';
 import Footer from './Footer';
-import { useEffect } from 'react';
-
 
 const Layout = ({ children }) => {
-
-
-	useEffect(() => {
-		const body = document.body;
-		body.setAttribute("id", "kt_body");
-		body.classList.add('header-fixed', 'header-tablet-and-mobile-fixed', 'toolbar-enabled', 'toolbar-fixed', 'aside-enabled', 'aside-fixed');
-	}, [])
-
 	return (
 		<div>
 			<Head>
@@ -46,26 +36,22 @@ const Layout = ({ children }) => {
 				{/*begin::Main*/}
 				{/*begin::Root*/}
 			</Head>
-			{/* <div className="page d-flex flex-row flex-column-fluid"> */}
-			<div>
+			<div className="page d-flex flex-row flex-column-fluid">
 				<nav>
 					<AsideMenu />
 				</nav>
-
+				{/* <nav>
+					<NavBar />
+				</nav> */}
 				<nav>
 					<NavBarr />
 				</nav>
-
-				{/* <main className="m-0 vh-100 row justify-content-center align-items-center"> */}
-				<main>
-					{children}
-				</main>
-
-				<footer>
-					<Footer />
-				</footer>
+				<div className="m-0 vh-100 row justify-content-center align-items-center">
+					<main>
+						{children}
+					</main>
+				</div>
 			</div>
-
 			<script>var hostUrl = `assets/`;</script>
 			<script src="assets/plugins/global/plugins.bundle.js"></script>
 			<script src="assets/js/scripts.bundle.js"></script>
